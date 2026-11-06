@@ -1,0 +1,27 @@
+{
+  "name": "innocitto-bricks-agents",
+  "version": "0.1.0",
+  "description": "Agent documentation for WordPress projects built with Bricks Builder and the Bricks Native Framework — install AGENTS.md and reference docs into any project",
+  "type": "module",
+  "bin": {
+    "innocitto-bricks-agents": "./bin/cli.js"
+  },
+  "files": [
+    "bin",
+    "AGENTS.md",
+    "agent-docs",
+    "templates"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "keywords": [
+    "agents",
+    "ai",
+    "wordpress",
+    "bricks-builder",
+    "bricks-native-framework",
+    "innocitto"
+  ],
+  "license": "MIT"
+}
