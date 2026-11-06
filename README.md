@@ -77,7 +77,7 @@ git push --follow-tags
 
 The workflow checks npm, sees the new version, and publishes it. Pushes without a version bump are ignored (no error).
 
-**One-time setup:** add an npm automation token as a repo secret named `NPM_TOKEN` (npm → Access Tokens → Generate → Automation; then GitHub repo → Settings → Secrets and variables → Actions → New repository secret).
+**Authentication:** the workflow uses npm [Trusted Publishing](https://docs.npmjs.com/trusted-publishers), so no npm token is stored in GitHub. It's configured on npmjs.com under the package's **Settings → Trusted Publisher** (GitHub Actions, user `citto-cyber`, repository `Citto-Agents`, workflow `publish.yml`). Each release also gets a provenance badge on npm automatically.
 
 To publish manually instead:
 
